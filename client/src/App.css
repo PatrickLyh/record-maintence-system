@@ -1,0 +1,226 @@
+.App {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* sets the height to 100% of the viewport height */
+  width: 200px; /* sets the width of the navbar */
+  position: fixed; /* sets the position to fixed so that it remains in view while scrolling */
+  top: 0; /* aligns the navbar to the top of the viewport */
+  left: 0; /* aligns the navbar to the left of the viewport */
+  background-color: #222; /* sets the background color */
+  color: #fff; /* sets the text color */
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto; /* aligns the links to the bottom of the navbar */
+}
+
+.links a {
+  padding: 10px;
+  text-decoration: none; /* removes the default underline on links */
+  color: #fff; /* sets the link color */
+  font-size: 18px; /* sets the font size */
+  font-weight: 500; /* sets the font weight */
+  transition: all 0.2s ease-in-out; /* adds a smooth transition on hover */
+}
+
+.links a:hover {
+  background-color: #fff; /* changes the background color on hover */
+  color: #222; /* changes the text color on hover */
+}
+
+.center-link {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  align-items: auto;
+  flex-direction: column;
+}
+
+.center-link a {
+  padding: 10px;
+  text-decoration: none; /* removes the default underline on links */
+  color: #fff; /* sets the link color */
+  font-size: 18px; /* sets the font size */
+  font-weight: 500; /* sets the font weight */
+  transition: all 0.2s ease-in-out; /* adds a smooth transition on hover */
+}
+
+.center-link a:hover {
+  background-color: #fff; /* changes the background color on hover */
+  color: #222; /* changes the text color on hover */
+}
+
+
+
+
+.uploadPost{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 500px;
+  border: 2px solid coral;
+}
+
+.CreatePost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh -80px);
+}
+
+.uploadPost input {
+  width: 80%;
+  height: 50px;
+  margin: 10px;
+  outline: none;
+  font-size: 20px;
+}
+
+.uploadPost textarea{
+  height: 120px;
+  width: 80%;
+  margin: 10px;
+}
+
+.MainPage{
+  display: flex;
+  justify-content: center;
+  height: calc(100vh -80px);
+  flex-direction: column;
+  align-items: center; 
+}
+
+.PostContainer{
+  height: calc(100vh -80px);
+  width: 60%;
+  max-width: 50%;
+  padding:30px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: lightblue;
+  box-shadow: 2px 1px 8px black;
+  border:1px solid lightslategrey
+}
+
+.Post{
+ width:100%;
+ margin-top:20px;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ padding-left: 10px;
+ border:1px solid lightslategrey;
+ position: relative;
+}
+
+
+.Post button {
+  /* position: relative;  Position the button relative to the .Post container */
+  /* top: 10px; /* Adjust the top position as needed */
+  /* right: 10px; /* Adjust the right position as needed */
+  background-color: #0077C2; /* Set the background color of the button */
+  color: white; /* Set the font color of the button */
+  /*border: none; /* Remove the button border */
+  border-color: lightblue;
+  /* width: 200px; */
+  padding: 10px; /* Add some padding to the button */
+  font-size: 16px; /* Set the font size of the button */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+  margin-right: 10px;
+}
+
+.Post button:hover {
+  background-color: #005FA3; /* Change the background color when hovering over the button */
+}
+
+.Notification {
+  width: 55%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+}
+
+
+.post-title{
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.Post.individual{
+  background-color: rgb(170, 164, 162);
+  max-width: 60%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.like_btn{
+  width:13%;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.route-container {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.route-container.active {
+  opacity: 1;
+}
+
+
+.createButton {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #6fabeb;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.6rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: block;
+  
+  /* New styles for positioning the button */
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+
+
+.createButton:hover {
+  background-color: #0062cc;
+  transform: translateY(-2px);
+}
+
+.createButtonContainer {
+  display: block;
+  margin-bottom: 1rem; /* Optional margin between the two buttons */
+}
